@@ -1,0 +1,83 @@
+:root {
+    --primary-color: navy;
+    --body-color: #c8d8e4;
+    --mint: #52ab98;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--body-color);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b6777;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #ffffff;
+    margin: 10px 30px 10px 30px;
+}
+
+.fa-diamond::before {
+    font-size: 40px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 10px;
+    font-size: 30px;
+}
+
+header nav ul li a:hover {
+    background-color: var(--mint);
+    border-radius: 15px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--mint);
+    padding: 35px 30px;
+}
+
+footer h3 {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.current-year {
+    font-size: 20px;
+}
+
+
+
+/* make sure to add media queries for device widths */

@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Max's Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Max Winter</h1>
+        <h1>Max Winter's Portfolio</h1>
+        <div class="fa fa-diamond"></div>
         <nav>
             <ul>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a href="#">About Me</a>
+                    <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact-info">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <!--Hero section for Headshot image-->
+<!--
     <section class="hero">
         <section class="hero-cta">
             <h2>Get Started Today!</h2>
@@ -48,8 +52,9 @@
             </form>
         </section>
     </section>
+-->
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <h2>Projects</h2>
         <section class="project-item">
             <h3>Run Buddy</h3>
@@ -70,5 +75,39 @@
         <section class="stat-CSS"></section>
         <section class="stat-JS"></section>
     </section>
+
+    <section id="about-me">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quam repellat libero odio voluptatum optio laboriosam ullam deserunt, 
+            recusandae nesciunt quisquam aperiam dolorem necessitatibus exercitationem ut maxime placeat accusamus perspiciatis!
+        </p>
+    </section>
+
+    <section id="contact-info">
+        <ul>
+            <li>
+                Email: blah@aoo.com
+            </li>
+            <li>
+                GitHub Account
+            </li>
+            <li>
+                LinkedIn
+            </li>
+        </ul>
+
+    </section>
+
+    <footer>
+        <h3>
+            &copy Max Winter 
+        </h3>
+        <div class="current-year">
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </div>
+    </footer>
+
 </body>
 </html>
