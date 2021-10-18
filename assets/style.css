@@ -94,8 +94,18 @@ footer .fa-diamond::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;
+}
 
+.hero img {
+    border: 5px solid black;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
 
 
 /* make sure to add media queries for device widths */
