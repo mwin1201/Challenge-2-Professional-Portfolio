@@ -2,6 +2,7 @@
     --primary-color: navy;
     --body-color: #c8d8e4;
     --mint: #52ab98;
+    --white: #ffffff;
 }
 
 * {
@@ -28,18 +29,17 @@ header {
 
 header h1 {
     font-size: 40px;
-    color: #ffffff;
+    color: var(--white);
     margin: 10px 30px 10px 30px;
 }
 
-.fa-diamond::before {
+header .fa-diamond::before {
     font-size: 40px;
 }
 
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     list-style: none;
 }
@@ -63,20 +63,38 @@ header nav ul li a:hover {
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--mint);
-    padding: 35px 30px;
+    padding: 30px 25px;
 }
 
-footer h3 {
-    font-size: 24px;
+.footer-container {
+    display: flex;
+    justify-content: left;
+}
+
+footer .fa-diamond::before {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer-container h2 {
+    font-size: 20px;
     color: var(--primary-color);
 }
 
-.current-year {
-    font-size: 20px;
+.footer-text {
+    justify-content: right;
+    color: var(--white);
 }
+
+.hero {
+    background-image: url(./images/hero-background.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
 
 
 
