@@ -3,6 +3,7 @@
     --body-color: #c8d8e4;
     --mint: #52ab98;
     --white: #ffffff;
+    --blue: #2b6777;
 }
 
 * {
@@ -21,7 +22,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #2b6777;
+    background-color: var(--blue);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -101,10 +102,23 @@ footer .fa-diamond::before {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 50%;
-    max-width: 100%;
+    width: 310px;
+    max-width: 50%;
     height: auto;
     border-radius: 50%;
+}
+
+.projects h2 {
+    font-size: 34px;
+    color: var(--blue);
+    
+}
+
+.projects section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 
