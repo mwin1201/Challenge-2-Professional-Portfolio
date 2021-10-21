@@ -9,6 +9,8 @@
     <title>Max's Portfolio</title>
 </head>
 <body>
+
+    <!--header and navigation-->
     <header>
         <h1>Max Winter's Portfolio</h1>
         <div class="fa fa-diamond"></div>
@@ -26,59 +28,63 @@
             </ul>
         </nav>
     </header>
+    <!--end of header and navigation-->
 
-    <!--Hero section for Headshot image-->
-<!--
-    <section class="hero">
-        <section class="hero-cta">
-            <h2>Get Started Today!</h2>
-            <p>
-                Submit your information using this form and I will make sure to get back to you in 1 business day.
-            </p>
-        </section>
-        <section class="hero-form">
-            <h3>Inquiry Submission</h3>
-            <p>Enter information below for a consultation</p>
-            <form>
-                <label for="name">Enter Name:</label>
-                <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
-                <label for="email">Enter email address</label>
-                <input type="email" placeholder="Email Address" name="email" id="email" class="form-input">
-                <label for="project">Brief Project Description</label>
-                <input type="text" placeholder="Project Description" name="project" id="project" class="form-input">
-                <button type="submit">
-                    Send Info
-                </button>
-            </form>
-        </section>
-    </section>
--->
-
+    <!--hero section-->
     <section class="hero">
         <img src="./assets/images/Hiking.jpg" alt="Max hiking in California">
     </section>
+    <!--end of hero section-->
 
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <section class="project-item">
-            <h3>Run Buddy</h3>
-        </section>
-        <section class="project-item">
-            <h3>Javascript Project</h3>
-        </section>
-        <section class="project-item">
-            <h3>SQL Project</h3>
-        </section>
-        <section class="project-item">
-            <h3>React Project<h3>
-        </section>
-    </section>
+    <div class="flex-container">
+        <!--link down to section from navigation-->
+        <section class="flex-project" id="projects">
+            <div>
+                <h2 class="section-header">Projects</h2>
+            </div>
 
-    <section class="stats">
-        <section class="stat-HTML"></section>
-        <section class="stat-CSS"></section>
-        <section class="stat-JS"></section>
-    </section>
+            <div class="projects">
+                <section class="project-item">
+                    <h3>Run Buddy</h3>
+                    <a href="https://mwin1201.github.io/run-buddy/"><img src="./assets/images/Runners-image.jpg" alt="multiple runners running"></a>
+                </section>
+                <section class="project-item">
+                    <h3>Gladiator Battle</h3>
+                    <a href="https://mwin1201.github.io/robot-gladiators/"><img src="./assets/images/geometry-image.jpg" alt="geometric shapes creating a larger globe shape"></a>
+                </section>
+                <section class="project-item">
+                    <h3>Code Refactor</h3>
+                    <a href="https://mwin1201.github.io/challenge1-Code-Refactor/"><img src="./assets/images/SQL-image.jpg" alt="floating database in the palm of a person's hand"></a>
+                </section>
+                <section class="project-item">
+                    <h3>Conflict Resolution</h3>
+                    <a href="https://mwin1201.github.io/conflict-resolution/"><img src="./assets/images/react-image.jpg" alt="React logo"></a>
+                </section>
+            </div>
+        </section>
+
+        <!--sidebar stats-->
+        <aside class="stats flex-stats">
+            <div>
+                <h2 class="section-header">Coding Statistics</h2>
+            </div>
+            <section class="stat-HTML">
+                <p>
+                    HTML statistic
+                </p>
+            </section>
+            <section class="stat-CSS">
+                <p>
+                    CSS statistic
+                </p>
+            </section>
+            <section class="stat-JS">
+                <p>
+                    JS statistic
+                </p>
+            </section>
+        </aside>
+    </div>
 
     <section id="about-me">
         <p>
@@ -101,6 +107,7 @@
         </ul>
 
     </section>
+    
 
     <footer>
         <div class="footer-container">

@@ -26,6 +26,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 header h1 {
@@ -108,18 +109,56 @@ footer .fa-diamond::before {
     border-radius: 50%;
 }
 
-.projects h2 {
-    font-size: 34px;
-    color: var(--blue);
-    
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.projects section{
+.flex-project {
+    flex: 4;
+}
+
+.section-header {
+    font-size: 48px;
+    color: var(--blue);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
+.project-item {
+    border: 5px solid var(--primary-color);
+    flex: 0 0 400px;
+    position: relative;
+    margin: 20px;
+}
 
+.project-item img {
+    height: 500px;
+    width: auto;
+}
+
+.project-item img:hover {
+    opacity: 0.4;
+}
+
+.project-item h3 {
+    position: absolute;
+    font-size: 28px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--mint);
+}
+
+aside{
+    flex: 1;
+    text-align: center;
+    background-color: var(--mint);
+    border-left: 5px solid var(--blue);
+}
 /* make sure to add media queries for device widths */
