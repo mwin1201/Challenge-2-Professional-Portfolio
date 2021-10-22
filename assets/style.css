@@ -35,9 +35,9 @@ header h1 {
     margin: 10px 30px 10px 30px;
 }
 
-header .fa-diamond::before {
+/* header .fa-diamond::before {
     font-size: 40px;
-}
+} */
 
 header nav ul {
     display: flex;
@@ -116,12 +116,15 @@ footer .fa-diamond::before {
 
 .flex-project {
     flex: 4;
+    order: 1;
+    flex-basis: 80%;
 }
 
-.project-header {
+.project-header, .contact-header {
     font-size: 48px;
     color: var(--blue);
     margin-top: 15px;
+    margin-left: 15px;
     text-align: center;
 }
 
@@ -155,11 +158,13 @@ footer .fa-diamond::before {
     background-color: var(--mint);
 }
 
-aside{
+aside {
     flex: 1;
     text-align: center;
     background-color: #6db784;
     border-left: 10px solid var(--blue);
+    order: 2;
+    flex-basis: 20%;
 }
 
 .about-header {
@@ -171,7 +176,7 @@ aside{
 }
 
 .about-me article {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .about-me h3 {
@@ -180,9 +185,33 @@ aside{
 }
 
 .about-me p {
-    line-height: 1.3;
+    line-height: 1.4;
     color: black;
     padding: 5px;
+}
+
+.contact {
+    order: 3;
+    flex-basis: 80%;
+}
+
+.contact ul {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.contact ul li {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.contact ul li:hover {
+    color: red;
+}
+
+.contact ul li:active {
+    color: var(--mint);
 }
 
 /* make sure to add media queries for device widths */
