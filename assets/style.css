@@ -62,35 +62,6 @@ header nav ul li a:hover {
     border-radius: 15px;
 }
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--mint);
-    padding: 30px 25px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: left;
-}
-
-footer .fa-diamond::before {
-    font-size: 20px;
-    margin-right: 10px;
-}
-
-.footer-container h2 {
-    font-size: 20px;
-    color: var(--primary-color);
-}
-
-.footer-text {
-    justify-content: right;
-    color: var(--white);
-}
-
 .hero {
     background-image: url(./images/hero-background.gif);
     background-size: cover;
@@ -215,6 +186,35 @@ aside {
 
 .contact ul li a:active {
     color: var(--mint);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mint);
+    padding: 30px 25px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: left;
+}
+
+footer .fa-diamond::before {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer-container h2 {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.footer-text {
+    justify-content: right;
+    color: var(--white);
 }
 
 /* make sure to add media queries for device widths */
