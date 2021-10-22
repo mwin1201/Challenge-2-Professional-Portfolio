@@ -201,15 +201,19 @@ aside {
 }
 
 .contact ul li {
+    line-height: 1.3;
+}
+
+.contact ul li a {
     text-decoration: none;
     color: var(--primary-color);
 }
 
-.contact ul li:hover {
+.contact ul li a:hover {
     color: red;
 }
 
-.contact ul li:active {
+.contact ul li a:active {
     color: var(--mint);
 }
 
@@ -244,5 +248,10 @@ aside {
     header a {
         padding: 5px;
         font-size: 20px;
+    }
+
+    header nav ul {
+        justify-content: flex-start;
+
     }
 }
