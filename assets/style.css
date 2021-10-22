@@ -136,7 +136,6 @@ footer .fa-diamond::before {
 
 .project-item {
     border: 5px solid var(--primary-color);
-    flex: 0 0 400px;
     position: relative;
     margin: 20px;
 }
@@ -215,3 +214,23 @@ aside {
 }
 
 /* make sure to add media queries for device widths */
+@media screen and (max-width: 1050px) {
+    .flex-project, aside, .contact {
+        flex: 1 auto;
+    }
+
+    .project-item img {
+        height: 300px;
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+}
+
+
+@media screen and (max-width: 575px) {
+    
+}
